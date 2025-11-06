@@ -1,15 +1,15 @@
 type: collection.insomnia.rest/5.0
-name: Public Test APIs
+name: "Public Endpoints: Test APIs"
 meta:
-  id: wrk_48977a51ae7d4f51a59d290b1633eeb7
-  created: 1762387558832
-  modified: 1762388220064
+  id: wrk_ad475ece24574a65801e680cd855b49a
+  created: 1762389528751
+  modified: 1762389528751
   description: ""
 collection:
   - url: https://httpbin.org/anything
     name: httpbin - anything
     meta:
-      id: req_d01df6c7a29f4a3da46924a90ea81889
+      id: req_f6bed743b7874bc98334d803e25e1916
       created: 1762382129866
       modified: 1762388203641
       isPrivate: false
@@ -30,7 +30,7 @@ collection:
   - url: https://jsonplaceholder.typicode.com/posts
     name: jsonplaceholder - all posts
     meta:
-      id: req_e290590d2eb7494e9713cf339a394110
+      id: req_37fe5858664f41efbc0b378218adaaec
       created: 1762388147422
       modified: 1762388185407
       isPrivate: false
@@ -51,7 +51,7 @@ collection:
   - url: https://jsonplaceholder.typicode.com/posts/:post_id
     name: jsonplaceholder - post by id
     meta:
-      id: req_e4f6aecbd2124ab0a9e82de622476885
+      id: req_f01d29c7d7cc4f8a8d5eb21a842558a0
       created: 1762388232943
       modified: 1762389282426
       isPrivate: false
@@ -59,11 +59,10 @@ collection:
       sortKey: -1762388232943
     method: GET
     parameters:
-      - id: pair_85cfdc7360ae4b1288fe8fd1cb1e40b4
-        name: ""
+      - name: ""
         value: ""
-        description: ""
         disabled: false
+        id: pair_85cfdc7360ae4b1288fe8fd1cb1e40b4
     headers:
       - name: User-Agent
         value: insomnia/12.0.0
@@ -81,7 +80,7 @@ collection:
   - url: https://jsonplaceholder.typicode.com/posts/:post_id/comments
     name: jsonplaceholder - comment by post
     meta:
-      id: req_6ed2447932fd4a73982327c56b402f31
+      id: req_01fd2b16ee0e47faa6c6f0404dd95739
       created: 1762389308076
       modified: 1762389346343
       isPrivate: false
@@ -105,7 +104,7 @@ collection:
   - url: https://jsonplaceholder.typicode.com/users
     name: jsonplaceholder - all users
     meta:
-      id: req_08dd6233f64441cb93d00e025c763203
+      id: req_f86ee012b14947ee854fab9bd490336c
       created: 1762389360900
       modified: 1762389379176
       isPrivate: false
@@ -126,13 +125,13 @@ collection:
 cookieJar:
   name: Default Jar
   meta:
-    id: jar_23ee54435a3248faa86e67203bca6514
+    id: jar_5c31768f97d9424281a0e9a22a17bf9a
     created: 1762382100102
     modified: 1762382100102
 environments:
   name: Base Environment
   meta:
-    id: env_658ace3a581e488986f2e3b97ece536d
+    id: env_41ba9f38a8b741a3a774e485d2570cbb
     created: 1762382100101
     modified: 1762382100101
     isPrivate: false
