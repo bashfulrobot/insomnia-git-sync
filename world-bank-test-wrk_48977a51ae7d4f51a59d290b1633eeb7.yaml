@@ -1,20 +1,116 @@
 type: collection.insomnia.rest/5.0
-name: world-bank-test
+name: Public Test APIs
 meta:
   id: wrk_48977a51ae7d4f51a59d290b1633eeb7
   created: 1762387558832
-  modified: 1762387558832
+  modified: 1762388220064
   description: ""
 collection:
   - url: https://httpbin.org/anything
-    name: httpbin-anything
+    name: httpbin - anything
     meta:
       id: req_d01df6c7a29f4a3da46924a90ea81889
       created: 1762382129866
-      modified: 1762382278931
+      modified: 1762388203641
       isPrivate: false
       description: ""
       sortKey: -1762382129866
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://jsonplaceholder.typicode.com/posts
+    name: jsonplaceholder - all posts
+    meta:
+      id: req_e290590d2eb7494e9713cf339a394110
+      created: 1762388147422
+      modified: 1762388185407
+      isPrivate: false
+      description: ""
+      sortKey: -1762388147422
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://jsonplaceholder.typicode.com/posts/:post_id
+    name: jsonplaceholder - post by id
+    meta:
+      id: req_e4f6aecbd2124ab0a9e82de622476885
+      created: 1762388232943
+      modified: 1762389282426
+      isPrivate: false
+      description: ""
+      sortKey: -1762388232943
+    method: GET
+    parameters:
+      - id: pair_85cfdc7360ae4b1288fe8fd1cb1e40b4
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+    pathParameters:
+      - name: post_id
+        value: "2"
+  - url: https://jsonplaceholder.typicode.com/posts/:post_id/comments
+    name: jsonplaceholder - comment by post
+    meta:
+      id: req_6ed2447932fd4a73982327c56b402f31
+      created: 1762389308076
+      modified: 1762389346343
+      isPrivate: false
+      description: ""
+      sortKey: -1762389308076
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+    pathParameters:
+      - name: post_id
+        value: "3"
+  - url: https://jsonplaceholder.typicode.com/users
+    name: jsonplaceholder - all users
+    meta:
+      id: req_08dd6233f64441cb93d00e025c763203
+      created: 1762389360900
+      modified: 1762389379176
+      isPrivate: false
+      description: ""
+      sortKey: -1762389360900
     method: GET
     headers:
       - name: User-Agent
