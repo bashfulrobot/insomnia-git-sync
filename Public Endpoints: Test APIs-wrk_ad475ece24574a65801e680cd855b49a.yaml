@@ -1,4 +1,5 @@
 type: collection.insomnia.rest/5.0
+schema_version: "5.1"
 name: "Public Endpoints: Test APIs"
 meta:
   id: wrk_ad475ece24574a65801e680cd855b49a
@@ -58,11 +59,6 @@ collection:
       description: ""
       sortKey: -1762388232943
     method: GET
-    parameters:
-      - name: ""
-        value: ""
-        disabled: false
-        id: pair_85cfdc7360ae4b1288fe8fd1cb1e40b4
     headers:
       - name: User-Agent
         value: insomnia/12.0.0
@@ -110,6 +106,27 @@ collection:
       isPrivate: false
       description: ""
       sortKey: -1762389360900
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://httpbin.org/anything
+    name: httpbin - anything - test
+    meta:
+      id: req_d8d90891825a4305831574e64b3a1192
+      created: 1769709104617
+      modified: 1769709104617
+      isPrivate: false
+      description: ""
+      sortKey: -1762382129816
     method: GET
     headers:
       - name: User-Agent
